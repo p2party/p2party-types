@@ -2,6 +2,7 @@
     "private": true,
     "name": "@p2party/types",
     "version": "0.6.9999",
+    "types": "index.d.ts",
     "projects": [
         "https://p2party.com"
     ],
