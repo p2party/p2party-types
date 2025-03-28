@@ -1,19 +1,53 @@
 {
-    "private": true,
-    "name": "@p2party/types",
-    "version": "0.6.9999",
-    "types": "index.d.ts",
-    "projects": [
-        "https://p2party.com"
-    ],
-    "devDependencies": {
-        "@types/p2party": "workspace:.",
-        "@reduxjs/toolkit": "^2.6.1"
+  "name": "@p2party/types",
+  "description": "Types for WebRTC mesh networks",
+  "version": "0.6.7",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/p2party/p2party-types.git"
+  },
+  "author": {
+    "name": "Deliberative Technologies P.C.",
+    "email": "security@deliberative.io",
+    "url": "https://deliberative.io"
+  },
+  "contributors": [
+    {
+      "name": "Dimitris Karoukis",
+      "email": "dim@deliberative.io",
+      "url": "https://deliberative.io"
+    }
+  ],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/p2party/p2party-types/issues"
+  },
+  "keywords": [
+    "webrtc",
+    "public key cryptography",
+    "typescript"
+  ],
+  "homepage": "https://github.com/p2party/p2party-types#readme",
+  "types": "lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts"
     },
-    "owners": [
-        {
-            "name": "Dimitris Karoukis",
-            "githubUsername": "fuzzc0re"
-        }
-    ]
+    "./package.json": "./lib/package.json"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "projects": [
+    "https://p2party.com"
+  ],
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.6.1"
+  },
+  "owners": [
+    {
+      "name": "Dimitris Karoukis",
+      "githubUsername": "fuzzc0re"
+    }
+  ]
 }
