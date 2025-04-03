@@ -5,7 +5,7 @@ import { MessageCategory, MessageType, type MimeType, type FileExtension } from 
 import type { WebSocketMessageRoomIdRequest, WebSocketMessageRoomIdResponse, WebSocketMessageChallengeRequest, WebSocketMessageChallengeResponse, WebSocketMessageDescriptionSend, WebSocketMessageDescriptionReceive, WebSocketMessageCandidateSend, WebSocketMessageCandidateReceive, WebSocketMessageError } from "./utils/interfaces";
 import type { RoomData } from "./api/webrtc/interfaces";
 import type { BlacklistedPeer, UsernamedPeer, UniqueRoom } from "./db/types";
-declare const _default: {
+declare const p2party: {
     store: import("@reduxjs/toolkit").EnhancedStore<{
         commonState: import("./reducers/commonSlice").CommonState;
         keyPair: import("./reducers/keyPairSlice").KeyPair;
@@ -104,7 +104,12 @@ declare const _default: {
     MIN_PERCENTAGE_FILLED_CHUNK: number;
     MAX_PERCENTAGE_FILLED_CHUNK: number;
 };
-export default _default;
+declare global {
+    interface Window {
+        p2party: typeof p2party;
+    }
+}
 export { MessageType, MessageCategory };
 export type { State, Room, Peer, Channel, Message, RoomData, MimeType, FileExtension, UsernamedPeer, BlacklistedPeer, UniqueRoom, SignalingState, WebSocketMessageRoomIdRequest, WebSocketMessageRoomIdResponse, WebSocketMessageChallengeRequest, WebSocketMessageChallengeResponse, WebSocketMessageDescriptionSend, WebSocketMessageDescriptionReceive, WebSocketMessageCandidateSend, WebSocketMessageCandidateReceive, WebSocketMessageError, };
+export default p2party;
 //# sourceMappingURL=index.d.ts.map

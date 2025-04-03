@@ -1,10 +1,10 @@
 {
   "name": "@p2party/types",
   "description": "Types for WebRTC mesh networks",
-  "version": "0.6.7",
+  "version": "0.6.8",
   "repository": {
     "type": "git",
-    "url": "https://github.com/p2party/p2party-types.git"
+    "url": "git+https://github.com/p2party/p2party-types.git"
   },
   "author": {
     "name": "Deliberative Technologies P.C.",
@@ -43,11 +43,5 @@
   ],
   "dependencies": {
     "@reduxjs/toolkit": "^2.6.1"
-  },
-  "owners": [
-    {
-      "name": "Dimitris Karoukis",
-      "githubUsername": "fuzzc0re"
-    }
-  ]
+  }
 }
